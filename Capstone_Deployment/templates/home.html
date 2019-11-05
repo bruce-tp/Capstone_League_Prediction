@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Flask Web App</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='home1.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<div class="container">
+   <p  class="btn-push"> <a href="www.google.com">Recommendation</a></p>
+    </div>
+  
+<div class="header-image">
+  <img src ="{{ url_for('static', filename='lol_logo.jpg') }}">
+  </div>
+  <div class="header-image"> 
+    <img src ="{{ url_for('static', filename='match_prediction.png') }}">
+    </div>
+  
+  <div class="header-image">
+    <img src ="{{ url_for('static', filename='please_input.png') }}">
+    </div>
+<body>
+
+<!-- <div class="container">
+  <a href="#" class="btn-push">Reccomendation</a>
+  </div>
+
+<div class="header-image">
+<img src ="{{ url_for('static', filename='lol_logo.jpg') }}">
+</div> -->
+<!-- 
+<div class="input-image"> 
+  <img src ="{{ url_for('static', filename='match_prediction.png') }}">
+  </div>
+
+<div class="input-image">
+  <img src ="{{ url_for('static', filename='please_input.png') }}">
+  </div> -->
+
+<div class="padding">
+<form action="/result" method="POST">
+  <!--comment out-->
+  <div class="input-blue">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>  
+  <ul>
+    <li>
+      <input type="text" name="Bteam_top" placeholder="Blue Team Top">
+      <!-- <select>
+        <option name="Bteam_top" placeholder="Blue Team Top" value="volvo">Volvo</option>
+        <option name="Bteam_top" placeholder="Blue Team Top" value="saab">Saab</option>
+        <option name="Bteam_top" placeholder="Blue Team Top" value="opel">Opel</option>
+        <option name="Bteam_top" placeholder="Blue Team Top" value="audi">Audi</option>
+      </select> -->
+    </li>
+  
+    <li>
+      <input type="text" name="Bteam_middle" placeholder="Blue Team Middle">
+    </li>
+  
+    <li>
+      <input type="text" name="Bteam_bottom" placeholder="Blue Team Bottom">
+    </li>  
+  
+    <li>
+      <input type="text" name="Bteam_support" placeholder="Blue Team Support" >
+    </li> 
+    <li>
+      <input type="text" name="Bteam_jungle" placeholder="Blue Team Jungle" >
+    </li>
+  </ul>
+  </div>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br> 
+  <br>
+  <div class="input-red">
+  <ul>
+    <li>
+      <input type="text" name="Rteam_top" placeholder="Red Team Top">
+    </li>
+  
+    <li>
+      <input type="text" name="Rteam_middle" placeholder="Red Team Middle">
+    </li>
+  
+    <li>
+      <input type="text" name="Rteam_bottom" placeholder="Red Team Bottom">
+    </li>
+
+    <li>
+      <input type="text" name="Rteam_support" placeholder="Red Team Support">
+    </li>
+    
+    <li>
+      <input type="text" name="Rteam_jungle" placeholder="Red Team Jungle">
+    </li>     
+</ul>
+</div>
+
+    <!-- <label>browsers</label>
+    <input list="browsers">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    <br> -->
+    <input type="submit" value="Prediction" class="btn-submit" id="italicme">
+    
+</form>
+</div>
+
+<div class="group-image">
+  <img src ="{{ url_for('static', filename='Group_YOYOYO.png') }}">
+  </div>
+
+</body>
+</html>

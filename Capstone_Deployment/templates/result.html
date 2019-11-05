@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+        <title>Team Composition Evaluation Report</title>
+   <body>
+       <!-- <h1> {{ prediction }}</h1> -->
+       <h1>Probability of Blue Team Winning: {{prediction[0][1]*100}}%</h1>
+       <h1>Probability of Red Team Winning: {{prediction[0][0]*100}}%</h1>
+   </body>
+   <body>
+
+        <h1> 
+            {{ prediction }}
+ 
+            
+        </h1>
+        {% if images %}
+         <table>
+             <tbody>
+             {% for img_path in images %}
+                 <tr>
+                     
+                     <td><img src="{{img_path }}" alt="{{ img_path }}"></td>
+                 </tr>
+             {% endfor %}
+             </tbody>
+         </table>
+     {% else %}
+         <!-- No results :( -->
+     {% endif %}
+    </body>
+</html>
