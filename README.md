@@ -1,7 +1,7 @@
-# Example Site
+# Capstone Project - Champrediction
 
-This is a sample readme file for our GitHub Example repo. We are learning markdown
+This is a project about the game League of Legends, which aims to improve the gaming experience for players. The project consist of three parts: 
 
-*This is meant to be an example
-*Markdown is really fast
-*Pretty cool, right??
+* Part 1 - Match Prediction System
+* Part 2 - Recommandation System
+* Part 3 - Insight from Game Data Analytics
